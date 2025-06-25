@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodHero</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>FoodHero</h1>
+    <nav>
+      <ul>
+        <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+        <li><a href="#restaurantes">Restaurantes</a></li>
+        <li><a href="#reserva">Reserva</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="como-funciona">
+    <h2>¿Cómo funciona?</h2>
+    <p>FoodHero conecta restaurantes con excedentes de comida con usuarios que pueden reservar y pagar en línea.</p>
+  </section>
+
+  <section id="restaurantes">
+    <h2>Restaurantes Asociados</h2>
+    <ul>
+      <li>
+        <article>
+          <h3>Restaurante A</h3>
+          <p>Ofertas: Paquete de comida por $5.000 CLP</p>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h3>Restaurante B</h3>
+          <p>Ofertas: Caja de pan por $2.000 CLP</p>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section id="reserva">
+    <h2>Reserva tu pedido</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="restaurante">Restaurante:</label><br>
+      <select id="restaurante" name="restaurante" required>
+        <option value="">--Seleccione--</option>
+        <option value="restauranteA">Restaurante A</option>
+        <option value="restauranteB">Restaurante B</option>
+      </select><br><br>
+
+      <label for="hora">Hora de recogida:</label><br>
+      <input type="time" id="hora" name="hora" required><br><br>
+
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <footer id="contacto">
+    <p>Contacto: rodrigo@foodhero.cl</p>
+    <p>Síguenos en redes sociales: 
+      <a href="#">Facebook</a>, 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>

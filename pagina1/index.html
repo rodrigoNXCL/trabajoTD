@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Dentro del Head van las configuraciones de nuestra pagina-->
+    <meta charset="UTF-8"> <!--UTF8 da soporte caracteres español-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport determina responsividad-->
+    <title>Hello World</title> <!--Titulo de la pagina, valor que va en la pestaña-->
+</head>
+<body>
+    <!--Esto Es un Comentario-->
+    <h1>HTML Bootcamp Clase 03-06-2025</h1> <!--Los Heading van del h1 al h6-->
+    <h2>Heading 2</h2>
+    <h4>Heading 4</h4>
+    <h6>Heading 6</h6>
+    <br> <!--br es salto de linea-->
+    <hr> <!--hr linea continua-->
+    <!--p parrafos, strong negrita, b negrita, em cursiva-->
+    <p>
+    <strong> Lorem</strong> ipsum <em>dolor sit</em> amet <b>consectetur</b> adipisicing elit. <br> Eligendi corrupti sequi, accusamus enim rerum animi nihil, <br> temporibus atque nobis veniam laudantium, unde minima esse. Exercitationem velit quasi quo id dolor.
+    </p>
+    <br> <!--br es salto de linea-->
+    <hr> <!--hr linea continua-->
+    <!--Enlace o Hipervinculo-->
+    <a href="https://www.google.cl">Google</a><br>
+    <a href="index2.html">Pagina 2</a><br>
+    <a href="https://www.yahoo.com" target="_blank">Yahoo</a><br><!-- _blank Abre enlace en nueva pestaña-->
+    <a href="https://www.altavista.com" target="_parent">Altavista</a><br><!-- _parent Abre enlace en nueva pestaña-->
+    <a href="https://www.gmail.com" target="_top">Gmail</a><br><!-- _top Funciona igual al _self que viene x defecto-->
+    <br> <!--br es salto de linea-->
+    <hr> <!--hr linea continua-->
+    <!--Imagenes-->
+    <img src="assets/img/PapasHD.png" width="225" height="225"alt="_Papas"><br>
+    <h2>HTML Bootcamp Clase 04-06-2025</h2><br>
+    <!--Hipervinculo + imagen-->
+    <a href="www.facebook.com" target="_blank">
+        <img src="assets/img/fb.jpg" alt="FACEBOOK">
+    </a><br>
+    <!--Listas Ordenadas OL / no Ordenadas UL (Li List Item)-->
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ol>
+    <ul>
+        <li>LUNES</li>
+        <li>MARTES</li>
+        <li>MIERCOLES</li>
+        <li>JUEVES</li>
+        <li>VIERNES</li>
+        <ul>
+            <li>SABADO</li>
+                <UL>
+                <li>DOMINGO</li>
+                </UL>
+        </ul>
+    </ul>
+
+    <!--Tablas-->
+    <table style="background-color: aqua;" >
+        <caption> <h2> Ejemplo Tablas </h2></caption> <!--Titulo Tablas-->
+        <thead><!--Cabeceras de columnas-->
+            <tr> <!--TR = TableRow-->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Rodrigo</td>
+            <td>Chandia</td>
+            <td>45</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Chandia</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Chandia</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Valentina</td>
+                <td>Chandia</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--VIDEOS-->
+    <video width="300" height="300" autoplay muted >
+      <source src="assets/video/4K_test.mp4" type="video/mp4">
+    </video>
+    <video src="assets/video/4K_test.mp4" width="300" height="300" autoplay muted></video>
+</body>
+</html>

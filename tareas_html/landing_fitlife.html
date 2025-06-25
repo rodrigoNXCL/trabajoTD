@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife – Mejora tus hábitos</title>
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons para los iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar fija en la parte superior, colapsable en móviles -->
+  <!-- Usamos .fixed-top para que siempre esté visible y .navbar-expand-lg para que colapse en pantallas <992px -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">FitLife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMenu" class="collapse navbar-collapse">
+        <!-- .ms-auto empuja los enlaces a la derecha -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Características</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#subscribe">Suscripción</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero de altura completa (100vh), centrado vertical y horizontal -->
+  <header id="hero" class="vh-100 d-flex align-items-center bg-primary text-white">
+    <div class="container text-center">
+      <h1 class="display-4">Transforma tus hábitos con FitLife</h1>
+      <p class="lead">Descubre planes de alimentación y ejercicio personalizados</p>
+      <!-- .btn-lg hace el botón más grande; responsivo por defecto -->
+      <a href="#" class="btn btn-light btn-lg">Descargar la App</a>
+    </div>
+  </header>
+
+  <!-- Características: tres columnas en md+, una columna en sm -->
+  <section id="features" class="container py-5">
+    <h2 class="text-center mb-4">Características</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <!-- Icono con .bi y tamaño con .fs-1 -->
+        <i class="bi bi-activity fs-1 text-primary mb-2"></i>
+        <h5>Seguimiento en tiempo real</h5>
+        <p>Registra tus comidas y ejercicios al instante desde cualquier dispositivo.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-graph-up-arrow fs-1 text-primary mb-2"></i>
+        <h5>Estadísticas detalladas</h5>
+        <p>Visualiza tu progreso con gráficos y reportes semanales.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-people fs-1 text-primary mb-2"></i>
+        <h5>Comunidad FitLife</h5>
+        <p>Únete a retos con otros usuarios para mantener la motivación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios: cards flexibles en 1,2 o 3 columnas según ancho -->
+  <section id="testimonials" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Lo que dicen nuestros usuarios</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">“FitLife cambió mi forma de ver la comida. ¡Me siento con más energía!”</p>
+              <h6 class="card-subtitle text-muted mt-3">— Ana P.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">“Los retos de la comunidad me ayudaron a no rendirme. Súper recomendado.”</p>
+              <h6 class="card-subtitle text-muted mt-3">— Carlos M.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">“Las estadísticas son muy claras y me impulsan a mejorar cada día.”</p>
+              <h6 class="card-subtitle text-muted mt-3">— Laura R.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario de suscripción: entrada y botón en la misma línea en md+ -->
+  <section id="subscribe" class="container py-5">
+    <h2 class="text-center mb-4">Suscríbete a nuestras novedades</h2>
+    <form class="row justify-content-center">
+      <div class="col-sm-8 col-md-6">
+        <!-- Input group hace que input y botón estén unidos -->
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+          <button class="btn btn-primary" type="submit">Suscribirse</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer sencillo con fondo oscuro y texto centrado -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>© 2025 FitLife. Todos los derechos reservados.</p>
+      <!-- Iconos sociales con espacio entre ellos -->
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (Popper incluido) desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios::</title>
+</head>
+<body>
+    <!-- formulario
+    action: ruta hacia donde viaja la informacion
+    method: forma de enviar la informacion(get; post)
+    -->
+    <form action="#" method="get">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" />
+        <!--input 
+        id: identificador UNICO para el input(rut)
+        name:identificador UNICO, para capturar en el backend 
+        -->
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="Ingresa edad">
+        <br>
+        <label for="clave">Password:</label>
+        <input type="password" name="clave" id="clave">
+        <br>
+        <!-- f_nacimiento= 01/01/1980-->
+        <label for="f_nacimiento">Fecha Nacimiento</label>
+        <input type="datetime-local" name="f_nacimiento" id="f_nacimiento">
+        <br>
+        <!--Radio button-->
+        <label >Dias de Semana</label>
+        <!--dia_semana= martes-->
+        <label for="lunes">Lunes</label>
+        <input type="radio" name="dia_semana" id="lunes" value="lunes">
+        
+        <input type="radio" name="dia_semana" id="martes" value="martes">
+        <label for="martes">Martes</label>
+        <input type="radio" name="dia_semana" id="miercoles" value="miercoles">
+        <label for="miercoles">Miercoles</label>
+        <br>
+        <!--Checkbox-->
+        <label for="c_acepto">Acepto terminos y condiciones</label>
+        <input type="checkbox" name="c_acepto" id="c_acepto">
+        <br>
+        <!--TextArea-->
+        <label for="desc">Descripción</label><br>
+        <textarea name="desc" id="desc" rows="5" cols="20"></textarea>
+    </form>
+    <h2>Clase 06-06-2025</h2>
+    <form action="#" method="get">
+        <label for="skill">Seleccione una tecnologia</label><br>
+        <select name="skill" id="skill">
+            <option value="-1">Seleccione...</option>
+            <option value="1">html</option>
+            <option value="2">css</option>
+            <option value="3">js</option>
+        </select><br>
+        <input type="button" value="Enviar" onclick="alert('Hola World!!!')">
+        <button>Enviar 2</button>
+        <!--Button tiene el type de -->
+    </form>
+</body>
+</html>

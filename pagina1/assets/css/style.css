@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 1px solid grey;
+}
+
+h1 {
+    color: blueviolet;
+    font-style: oblique;
+}
+/*1ra forma, Estilo por etiqueta*/
+p {
+    color: red;
+}
+/*2da forma, Estilo por Clase (Atributo agregado)*/
+/* al llamar la clase esta empieza con un punto (.)*/
+.pcolor{
+color: blue;
+}
+.bgcolor{
+    background-color: aquamarine;
+}
+/*3era forma, Estilo por identificador id (#)*/
+#p6{
+    color: darkgreen;
+}
+/*Selector Descendente*/
+/*Se aplica estilo solo al elemento hijo*/
+/*por clase*/
+.divcolor p{
+    font-size: 12px;
+}
+.divcolor h2{
+    font-size: 15px;/* h2 2.1*/
+}
+#div2 h2{
+    font-size: 10px;
+}

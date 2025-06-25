@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LibroLibre - Biblioteca Digital</title>
+  <!-- Aquí iría tu CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- 1) BARRA DE NAVEGACIÓN PRINCIPAL -->
+  <nav>
+    <ul>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#registro">Registro</a></li>
+      <li><a href="#sobrenosotros">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================= -->
+  <!-- 2) SECCIÓN CATÁLOGO: búsqueda + lista de libros -->
+  <section id="catalogo">
+    <h2>Catálogo de Libros</h2>
+
+    <!-- 2.1) Formulario de búsqueda 
+         permite filtrar por título, autor o género -->
+    <form id="searchForm">
+      <input type="text" id="searchTitle"  name="title"  placeholder="Buscar por título">
+      <input type="text" id="searchAuthor" name="author" placeholder="Buscar por autor">
+      <select id="searchGenre" name="genre">
+        <option value="">— Seleccionar género —</option>
+        <option value="fantasia">Fantasía</option>
+        <option value="ciencia_ficcion">Ciencia ficción</option>
+        <option value="misterio">Misterio</option>
+        <!-- añadir más géneros según catálogo -->
+      </select>
+      <button type="button" id="btnSearch">Buscar</button>
+    </form>
+
+    <!-- 2.2) Lista de libros 
+         cada <li> muestra título, autor y un resumen breve -->
+    <ul id="bookList">
+      <li class="book-item">
+        <h3 class="book-title">El Hobbit</h3>
+        <p class="book-author">J.R.R. Tolkien</p>
+        <p class="book-summary">Bilbo Bolsón emprende un viaje inolvidable lleno de magia y aventura.</p>
+      </li>
+      <li class="book-item">
+        <h3 class="book-title">1984</h3>
+        <p class="book-author">George Orwell</p>
+        <p class="book-summary">Una sociedad distópica vigilada por el Gran Hermano.</p>
+      </li>
+      <!-- el resto del equipo inyectará aquí el catálogo dinámicamente con JS -->
+    </ul>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 3) SECCIÓN REGISTRO e INICIO DE SESIÓN -->
+  <section id="registro">
+    <h2>Crear Cuenta</h2>
+    <!-- 3.1) Formulario de registro de nuevos usuarios -->
+    <form id="registerForm">
+      <label for="regName">Nombre completo</label>
+      <input type="text" id="regName" name="name" required>
+
+      <label for="regEmail">Correo electrónico</label>
+      <input type="email" id="regEmail" name="email" required>
+
+      <label for="regPass">Contraseña</label>
+      <input type="password" id="regPass" name="password" required>
+
+      <label for="regPass2">Confirmar contraseña</label>
+      <input type="password" id="regPass2" name="password2" required>
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <h2>Iniciar Sesión</h2>
+    <!-- 3.2) Formulario de login para usuarios existentes -->
+    <form id="loginForm">
+      <label for="loginEmail">Correo electrónico</label>
+      <input type="email" id="loginEmail" name="email" required>
+
+      <label for="loginPass">Contraseña</label>
+      <input type="password" id="loginPass" name="password" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 4) SECCIÓN SOBRE NOSOTROS -->
+  <section id="sobrenosotros">
+    <h2>Sobre LibroLibre</h2>
+    <p>
+      Somos una biblioteca digital que ofrece ebooks y audiolibros de todos los géneros. 
+      Nuestra misión es facilitar el acceso a la lectura y ayudar a descubrir nuevos autores.
+    </p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- Aquí iría tu JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
