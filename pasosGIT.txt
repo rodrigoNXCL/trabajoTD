@@ -1,0 +1,15 @@
+git config --global user.name "rodrigoNXCL"
+git config --global user.email "nxcl.servicios@gmail.com"
+
+pasos git
+0. pwd (nos dice raiz local)
+0.1 ls -la (lista todos los archivos)
+0.2 cd "nombre directorio" (para movernos a una nueva carpeta)
+0.3 cd.. (vuelve 1 directorio)
+0.0 git init
+1. git add . (prepara todos los archivos)
+2. git commit -m "Explico lo que estoy haciendo"
+3. git branch -M main
+4. git remote add origin https://github.com/rodrigoNXCL/REPOSITORIO.git
+5. git push -u origin main (NOS LLEVA AL MAIN)
+5.1 git push origin main (agrega lo que tenemos en add)
