@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Interactivo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ============================= -->
+  <!-- HEADER: siempre en la parte superior -->
+  <header class="site-header">
+    <h1>Perfil Interactivo Tarea AE5_Individual</h1>
+  </header>
+
+  <!-- ============================= -->
+  <!-- MAIN: contenedor centrado -->
+  <main class="profile-container">
+    <section class="profile-card" id="profileCard">
+      <!-- Avatar -->
+      <div class="avatar">
+        <img src="img/avatar-placeholder.png" alt="Avatar">
+      </div>
+
+      <!-- Nombre -->
+      <h2 id="name">Rodrigo Chandia Cerna</h2>
+
+      <!-- Biografía -->
+      <p id="bio">Soy un intento de desarrollador Full Stack.</p>
+      <!-- ============================= -->
+      <!-- ESTADÍSTICAS: contadores + botones -->
+      <div class="stats">
+        <!-- 1) Connections: queremos aumentar este contador -->
+        <p>
+          Connections: 
+          <span id="connCount">0</span>
+          <!-- Al hacer clic, incrementa en 1 -->
+          <button id="btnConn" class="btn-icon" aria-label="Añadir conexión">➕</button>
+        </p>
+        <!-- 2) Requests: queremos disminuir este contador -->
+        <p>
+          Requests: 
+          <span id="reqCount">5</span>
+          <!-- Al hacer clic, decrementa en 1 -->
+          <button id="btnReq" class="btn-icon" aria-label="Declinar solicitud">➖</button>
+        </p>
+      </div>
+
+      <!-- ============================= -->
+      <!-- ACCIONES: editar biografía y eliminar perfil -->
+      <div class="actions">
+        <!-- 3) Editar texto del HTML -->
+        <button id="btnEdit" class="btn-icon" aria-label="Editar biografía">✏️</button>
+        <!-- 4) Eliminar elemento del DOM -->
+        <button id="btnRemove" class="btn-icon" aria-label="Eliminar perfil">🗑️</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

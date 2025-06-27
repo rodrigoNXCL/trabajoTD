@@ -1,0 +1,87 @@
+*{
+    font-family: Arial;
+}
+h1{
+    background-color:#54B258;
+    color: white;
+    text-align: center;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0;
+
+}
+
+
+#formulario-retiro input,
+#formulario-retiro select,
+#formulario-retiro button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+/* ============================= */
+/* 1) Contenedor principal centrado y con padding */
+main {
+  max-width: 800px;       /* limita el ancho en pantallas grandes */
+  margin: 0 auto;         /* centra horizontalmente */
+  padding: 1rem;          /* espacio interior para que no toque los bordes */
+}
+
+/* ============================= */
+/* 2) Listado de materiales en dos columnas en pantallas grandes */
+.list ul {
+    display: flex;
+  flex-wrap: wrap;        /* permite que los ítems pasen a la siguiente línea */
+  gap: 1rem;              /* espacio entre ítems */
+}
+.list ul li {
+  flex: 1 1 45%;          /* cada ítem ocupa aprox. 45% del ancho, ajustable */
+  box-sizing: border-box; /* incluye padding/border en ese 45% */
+}
+
+/* ============================= */
+/* 3) Formularios y entradas adaptables */
+.form form div {
+  margin-bottom: 1rem;    /* separa los campos verticalmente */
+}
+.form form input,
+.form form select,
+.form form button {
+  width: 100%;            /* ocupan todo el ancho de su contenedor */
+  box-sizing: border-box; /* evita que padding rompa el ancho */
+  padding: 0.5rem;        /* deja espacio interior cómodo */
+}
+
+/* ============================= */
+/* 4) Media query: ajustes para móviles (<600px) */
+@media (max-width: 600px) {
+  /* 4.1) Listado pasa a UNA sola columna */
+.list ul li {
+    flex: 1 1 100%;
+}
+
+  /* 4.2) Titular y secciones ajustan tamaño de fuente */
+header h1 {
+    font-size: 1.5rem;     /* más legible en pantallas pequeñas */
+}
+section h2 {
+    font-size: 1.25rem;
+}
+
+  /* 4.3) Footer con padding reducido */
+footer {
+    padding: 1rem 0;
+    font-size: 0.8rem;     /* un poco más pequeño para encajar */
+}
+}
+
+/* ============================= */
+/* 5) Comprobación de meta viewport */
+/* Ya tienes en <head>: 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   Eso permite que el navegador escale correctamente la página en móviles. */

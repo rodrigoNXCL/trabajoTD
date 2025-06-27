@@ -1,0 +1,8 @@
+/* styles.css */
+.thumb {
+  cursor: pointer;
+  transition: transform .2s;
+}
+.thumb:hover {
+  transform: scale(1.05);
+}

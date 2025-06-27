@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería Bootstrap - RODRIGO</title>
+  <!-- 1) Bootstrap CSS desde CDN para estilos y responsividad -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <!-- 2) Hoja de estilos personalizada (opcional) -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Contenedor principal centrado con padding -->
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Mi Galería Responsiva</h1>
+
+    <!-- 3) Galería: fila de 4 columnas en md+, 2 en sm, 1 en xs -->
+    <div class="row g-3">
+      <!-- Cada imagen es un 'col' con clase responsive -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <!-- 4) Miniatura clicable -->
+        <img src="assets/img/img1.png" 
+             alt="Imagen 1" 
+             class="img-fluid thumb rounded" 
+             data-bs-toggle="modal" 
+             data-bs-target="#galleryModal" 
+             data-bs-caption="Atención Clientes">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img src="assets/img/img2.png" alt="Imagen 2" class="img-fluid thumb rounded"
+             data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-caption="Programacion y Desarrollo">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img src="assets/img/img3.png" alt="Imagen 3" class="img-fluid thumb rounded"
+             data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-caption="Trabajo en Equipo">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img src="assets/img/img4.png" alt="Imagen 4" class="img-fluid thumb rounded"
+             data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-caption="Cetificación">
+      </div>
+    </div>
+  </div>
+
+  <!-- 5) Modal de Bootstrap para mostrar imagen ampliada -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Botón de cerrar -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalLabel">Título</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <!-- Imagen ampliada dentro del modal -->
+        <div class="modal-body text-center">
+          <img id="modalImage" src="#" alt="Imagen ampliada" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6) jQuery y Bootstrap JS necesarios para la funcionalidad del modal -->
+  <!-- 1) jQuery desde CDN $() -->
+<script
+   src="https://code.jquery.com/jquery-3.6.4.min.js"
+   crossorigin="anonymous">
+ </script>
+
+ <!-- 2) Bootstrap JS (Popper incluido) -->
+ <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+ </script>
+  <!-- 7) Script personalizado para cargar la imagen y el título en el modal -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

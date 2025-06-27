@@ -13,6 +13,7 @@
   <!-- ============================= -->
   <!-- 1) BARRA DE NAVEGACIÓN PRINCIPAL -->
   <nav>
+    <h1>LibroLibre</h1>
     <ul>
       <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#registro">Registro</a></li>
@@ -28,16 +29,8 @@
     <!-- 2.1) Formulario de búsqueda 
          permite filtrar por título, autor o género -->
     <form id="searchForm">
-      <input type="text" id="searchTitle"  name="title"  placeholder="Buscar por título">
-      <input type="text" id="searchAuthor" name="author" placeholder="Buscar por autor">
-      <select id="searchGenre" name="genre">
-        <option value="">— Seleccionar género —</option>
-        <option value="fantasia">Fantasía</option>
-        <option value="ciencia_ficcion">Ciencia ficción</option>
-        <option value="misterio">Misterio</option>
-        <!-- añadir más géneros según catálogo -->
-      </select>
-      <button type="button" id="btnSearch">Buscar</button>
+      <input type="text" id="buscar"  name="title"  placeholder="Buscar por título, autor o género" >
+      <button type="submit">Buscar</button>
     </form>
 
     <!-- 2.2) Lista de libros 
@@ -46,16 +39,20 @@
       <li class="book-item">
         <h3 class="book-title">El Hobbit</h3>
         <p class="book-author">J.R.R. Tolkien</p>
+        <p class="book-genero">Fantasia</p>
         <p class="book-summary">Bilbo Bolsón emprende un viaje inolvidable lleno de magia y aventura.</p>
       </li>
       <li class="book-item">
         <h3 class="book-title">1984</h3>
         <p class="book-author">George Orwell</p>
+         <p class="book-genero">Ficción</p>
         <p class="book-summary">Una sociedad distópica vigilada por el Gran Hermano.</p>
       </li>
       <!-- el resto del equipo inyectará aquí el catálogo dinámicamente con JS -->
     </ul>
+    <ul id="resultados"></ul>
   </section>
+
 
   <!-- ============================= -->
   <!-- 3) SECCIÓN REGISTRO e INICIO DE SESIÓN -->
@@ -103,6 +100,6 @@
 
   <!-- ============================= -->
   <!-- Aquí iría tu JavaScript -->
-  <script src="js/app.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
