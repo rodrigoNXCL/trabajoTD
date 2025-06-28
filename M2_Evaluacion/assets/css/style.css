@@ -1,0 +1,9 @@
+/* style.css */
+/* Estilos base y ajustes de tipografía */
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  /* Opcional: superponer fondo oscuro semitransparente */
+  background-color: rgba(0,0,0,0.3);
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amenazas Comunes</title>
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVBAR (idéntico al de index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">CyberInfo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="amenazas.html">Amenazas</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h2 class="mb-4">Amenazas Cibernéticas más comunes</h2>
+
+    <!-- TARJETAS (cards) para cada tipo de ataque -->
+    <div class="row gy-4">
+      <!-- Phishing -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="assets/img/pishing.png" class="card-img-top mx-auto pt-3" 
+               style="width:80px;" alt="Phishing">
+          <div class="card-body">
+            <h5 class="card-title">Phishing</h5>
+            <p class="card-text">
+              Fraude para robar credenciales mediante correos o webs falsas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Ransomware -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="assets/img/ransomware.png" class="card-img-top mx-auto pt-3" 
+               style="width:80px;" alt="Ransomware">
+          <div class="card-body">
+            <h5 class="card-title">Ransomware</h5>
+            <p class="card-text">
+              Malware que cifra tus archivos y pide rescate para liberarlos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Malware -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="assets/img/malware.png" class="card-img-top mx-auto pt-3" 
+               style="width:80px;" alt="Malware">
+          <div class="card-body">
+            <h5 class="card-title">Malware</h5>
+            <p class="card-text">
+              Software malicioso que daña sistemas o roba información.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- DDoS -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 text-center">
+          <img src="assets/img/ddos.png" class="card-img-top mx-auto pt-3" 
+               style="width:80px;" alt="DDoS">
+          <div class="card-body">
+            <h5 class="card-title">DDoS</h5>
+            <p class="card-text">
+              Sobrecarga de un servicio para dejarlo inaccesible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACORDEÓN con ejemplos reales -->
+    <div class="accordion mt-5" id="casesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="caseOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Caso 1: Filtración de datos corporativos
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" 
+             aria-labelledby="caseOne" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            En 2023, XYZ Corp sufrió un ataque de phishing masivo que expuso 10 000 cuentas…
+          </div>
+        </div>
+      </div>
+      <!-- Agrega más items según necesites -->
+    </div>
+  </main>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
