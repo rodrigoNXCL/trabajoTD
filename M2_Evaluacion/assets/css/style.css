@@ -7,3 +7,16 @@ header {
   /* Opcional: superponer fondo oscuro semitransparente */
   background-color: rgba(0,0,0,0.3);
 }
+/* 1) Fijar altura exacta del contenedor y ocultar lo que sobresalga */
+.header-banner {
+  height: 200px !important;    /* Altura fija: ajústala a 150px, 180px, etc. */
+  overflow: hidden;             /* Corta la imagen que exceda */
+}
+
+/* 2) La imagen llena el ancho y la altura del contenedor, pero se recorta con cover */
+.banner-img {
+  width: 100% !important;      /* Ocupa todo el ancho */
+  height: 100% !important;     /* Ocupa toda la altura del contenedor */
+  object-fit: cover;            /* Recorte centrado, sin distorsión */
+  display: block;               /* Elimina gaps por defecto */
+}
