@@ -1,0 +1,63 @@
+# --------------------------------------
+# 1) Archivos de sistema / SO
+# --------------------------------------
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --------------------------------------
+# 2) Carpetas de IDE / editores
+# --------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --------------------------------------
+# 3) Dependencias / builds (Node, si usas npm/yarn)
+# --------------------------------------
+node_modules/
+dist/
+build/
+
+# --------------------------------------
+# 4) Archivos de entorno / configuración local
+# --------------------------------------
+# Variables de entorno (API keys, contraseñas)
+.env
+.env.local
+# Archivos de configuración de Docker Compose
+docker-compose.override.yml
+
+# --------------------------------------
+# 5) Logs y temporales
+# --------------------------------------
+logs/
+*.log
+*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --------------------------------------
+# 6) Archivos empaquetados / binarios
+# --------------------------------------
+*.zip
+*.tar.gz
+*.exe
+*.dll
+
+# --------------------------------------
+# 7) Recursos generados (opcional)
+# --------------------------------------
+# Si generas versiones optimizadas con tu pipeline
+assets/css/*.min.css
+assets/js/*.min.js
+
+# --------------------------------------
+# 8) Otros
+# --------------------------------------
+# Backups de editores
+*~
+*.bak

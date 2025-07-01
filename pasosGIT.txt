@@ -7,6 +7,7 @@ pasos git
 0.2 cd "nombre directorio" (para movernos a una nueva carpeta)
 0.3 cd.. (vuelve 1 directorio)
 0.4 git remote set-url origin https://github.com/rodrigoNXCL/M2_Evaluacion.git // cambiar de REPOSITORIO
+0.5 git remote -v // nos dice en que repo estamos
 0. git init
 1. git add . (prepara todos los archivos)
 2. git commit -m "Explico lo que estoy haciendo"
